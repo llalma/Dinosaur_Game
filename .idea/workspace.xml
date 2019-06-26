@@ -14,14 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -72,14 +69,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dinosaur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="476">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="79" />
               <folding>
-                <element signature="method#Dinosaur#0;class#Dinosaur#0" />
-                <element signature="method#draw#0;class#Dinosaur#0" />
+                <element signature="imports" expanded="true" />
                 <element signature="method#jump#0;class#Dinosaur#0" />
                 <element signature="method#update_height#0;class#Dinosaur#0" />
                 <element signature="method#ground#0;class#Dinosaur#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cactus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,13 +119,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/Ground.java" />
-        <option value="$PROJECT_DIR$/src/Cactus.java" />
         <option value="$PROJECT_DIR$/src/Obstacle.java" />
         <option value="$PROJECT_DIR$/src/Bird.java" />
-        <option value="$PROJECT_DIR$/src/Dinosaur.java" />
         <option value="$PROJECT_DIR$/src/Game_Panel.java" />
         <option value="$PROJECT_DIR$/src/Game_Window.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Dinosaur.java" />
+        <option value="$PROJECT_DIR$/src/Cactus.java" />
       </list>
     </option>
   </component>
@@ -252,39 +260,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Google Drive/UNI/3rd year/CAB302/CAB302-Assignment/src/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="170" column="11" lean-forward="true" selection-start-line="170" selection-start-column="11" selection-end-line="170" selection-end-column="11" />
-          <folding>
-            <element signature="e#4355#5469#0" />
-            <element signature="e#33505#35215#0" />
-            <element signature="e#35221#37883#0" />
-            <element signature="e#37889#38845#0" />
-            <element signature="e#40148#41260#0" />
-            <element signature="e#41393#42560#0" />
-            <element signature="e#42376#42548#0" expanded="true" />
-            <element signature="e#42547#42548#0" expanded="true" />
-            <element signature="e#42570#44806#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Google Drive/UNI/3rd year/CAB302/CAB302-Assignment/src/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cactus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -310,20 +289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dinosaur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="method#Dinosaur#0;class#Dinosaur#0" />
-            <element signature="method#draw#0;class#Dinosaur#0" />
-            <element signature="method#jump#0;class#Dinosaur#0" />
-            <element signature="method#update_height#0;class#Dinosaur#0" />
-            <element signature="method#ground#0;class#Dinosaur#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -366,8 +331,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="124" column="19" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Google Drive/UNI/3rd year/CAB302/CAB302-Assignment/src/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="287" column="102" selection-start-line="285" selection-start-column="15" selection-end-line="287" selection-end-column="102" />
+          <folding>
+            <element signature="e#4355#5469#0" />
+            <element signature="e#33505#35215#0" />
+            <element signature="e#35221#37883#0" />
+            <element signature="e#37889#38845#0" />
+            <element signature="e#40148#41260#0" />
+            <element signature="e#41393#42560#0" />
+            <element signature="e#42570#44806#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dinosaur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#jump#0;class#Dinosaur#0" />
+            <element signature="method#update_height#0;class#Dinosaur#0" />
+            <element signature="method#ground#0;class#Dinosaur#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cactus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
