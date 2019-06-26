@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class Game_Window extends JFrame {
 
@@ -11,13 +10,13 @@ public class Game_Window extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         JPanel game  = new Game_Panel();
+
         getContentPane().add(game,"Center");
 
         // Display the window.
-        setLocation(200,200);
+        setLocation(300,200);
 
         pack();
         setVisible(true);
     }
-
 }
