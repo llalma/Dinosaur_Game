@@ -2,7 +2,7 @@ import java.awt.*;
 
 public abstract class Obstacle {
     int x,y,width,height;
-    final int game_speed = 1;
+    final int game_speed = 2;
 
     public Obstacle(int x, int y, int width, int height){
         this.x = x;

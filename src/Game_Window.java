@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class Game_Window extends JFrame {
-
+    Game_Panel game;
     /**
      * Default Constructor
      */
@@ -9,7 +9,7 @@ public class Game_Window extends JFrame {
         super("Dinosaur Game");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        JPanel game  = new Game_Panel();
+        game  = new Game_Panel();
 
         getContentPane().add(game,"Center");
 
@@ -18,5 +18,9 @@ public class Game_Window extends JFrame {
 
         pack();
         setVisible(true);
+    }
+
+    public int getScore(){
+        return game.getScore();
     }
 }

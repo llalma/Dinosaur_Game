@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -13,6 +15,7 @@ public class Game_Panel extends JPanel{
     private final int screen_width = 800;
     private final int screen_height = 400;
     private final int num_obstacles = 4;
+    public int score = 0;
 
     public Game_Panel() {
         this.setBackground(new java.awt.Color(255, 255, 255));
@@ -29,7 +32,7 @@ public class Game_Panel extends JPanel{
         //Add an input of left control and Z
         inputmap.put(KeyStroke.getKeyStroke(' '), "Jump" );
 
-        //Action when left control and z is pressed
+        //jump
         actionmap.put("Jump", new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
@@ -37,12 +40,17 @@ public class Game_Panel extends JPanel{
             }
         });
 
-
-        ground = new Ground();
         pop_obstacles();
     }
 
+    public int getScore(){
+        return score;
+    }
+
     private void pop_obstacles(){
+        ground = new Ground();
+        dino = new Dinosaur();
+
         for(int i = 0;i<num_obstacles;i++){
             new_obstacle();
         }
@@ -53,8 +61,20 @@ public class Game_Panel extends JPanel{
         super.paintComponent(g);
 
         ground.draw(g);
+
+        dino.update_height();
+        dino.draw(g);
+
         draw_Objects(g);
+
+        if(collision_check()){
+            game_over();
+        }else{
+            score++;
+            System.out.println(score);
+        }
     }
+
     private void draw_Objects(Graphics g){
 
         //Scroll and draw obstacles
@@ -70,13 +90,8 @@ public class Game_Panel extends JPanel{
     }
 
     private void new_obstacle(){
-        if(rand.nextInt(2) == 0){
-            //Add new cactus off screen
-            obstacles.add(new Cactus(rand.nextInt(800)+screen_width));
-        }else{
-            //Add new bird off screen
-            obstacles.add(new Bird(rand.nextInt(800)+screen_width, rand.nextInt(3)));
-        }
+
+        obstacles.add(new Cactus(rand.nextInt(800)+screen_width));
 
         check_Distances();
     }
@@ -101,4 +116,41 @@ public class Game_Panel extends JPanel{
            }
        }
     }
+
+    private boolean collision_check(){
+        int left_dino = dino.x;
+        int right_dino = dino.x + (int)dino.dino_width;
+        int top_dino = (int)dino.y;
+        int bottom_dino = (int)(dino.y + dino.dino_height);
+
+        boolean check = false;
+
+        for (Obstacle obj: obstacles) {
+            int left_obj = obj.x;
+            int right_obj = obj.x + (int)obj.width;
+            int top_obj = (int)obj.y;
+            int bottom_obj = (int)(obj.y + obj.height);
+
+            if(!check) {
+                if (right_dino >= left_obj && right_dino <= right_obj) check = true;
+                if (left_dino >= left_obj && left_dino <= right_obj) check = true;
+
+                if(check){
+                    if (bottom_dino > top_obj){
+                        check = true;
+                    }else{
+                        check = false;
+                    }
+                }
+
+            }
+        }
+
+       return check;
+    }
+
+    private void game_over(){
+        score = -1;
+    }
+
 }

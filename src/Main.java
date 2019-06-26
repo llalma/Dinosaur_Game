@@ -13,9 +13,10 @@ public class Main {
         JFrame.setDefaultLookAndFeelDecorated(false);
         Game_Window game = new Game_Window();
 
-        while(true){
+        while(game.getScore() > -1){
             game.repaint();
             sleep(10);
         }
+        System.out.println("You suck");
     }
 }
